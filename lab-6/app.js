@@ -215,16 +215,16 @@
 // application to achieve the desired functionality.
 
 // Sample fetch request to get user data and display in table
-fetch('https://jsonplaceholder.typicode.com/users/')
-    .then(response => response.json())
-    .then(data => {
-        console.table(data); // Display data in table format in console
-    })
-    .catch(error => console.error('Error fetching user data:', error));
+// fetch('https://jsonplaceholder.typicode.com/users/')
+//     .then(response => response.json())
+//     .then(data => {
+//         console.table(data); // Display data in table format in console
+//     })
+//     .catch(error => console.error('Error fetching user data:', error));
 
 // Sample fetch request to get weather data (replace 'YOUR_API_KEY' with actual key)
 // const city = 'Hyderabad';
-// const apiKey = 'c7955bce9d197558155a3d30509d190f';
+// const apiKey = '';
 // fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
 //     .then(response => response.json())
 //     .then(data => {
