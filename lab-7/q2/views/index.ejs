@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+rel="stylesheet">
+</head>
+<body>
+    <h1>Contact List</h1>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr class="table-dark">
+                <th class="text-center">Name</th>
+                <th class="text-center">Email</th>
+                <th class="text-center">Phone Number</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <% list.forEach(contact => { %>
+                <tr class="table-light">
+                    <td class="text-center"><%= contact.name %></td>
+                    <td class="text-center"><%= contact.email %></td>
+                    <td class="text-center"><%= contact.phone %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+</body>
+</html>
